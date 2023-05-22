@@ -1,0 +1,26 @@
+schema {
+    query: QueryType
+    mutation: MutationType
+}
+
+type QueryType {
+    food(name: String): Food
+}
+
+type Food @key(fields:"name") {
+    name: String!
+    rating: Int!
+    description: String!
+}
+
+type MutationType {
+    addFood(food: FoodInput!): Food @auth
+}
+
+input FoodInput {
+    name: String!
+    rating: Int!
+}
+
+directive @auth on OBJECT | FIELD_DEFINITION
+

@@ -1,0 +1,12 @@
+query ($_representations: [_Any!]!) {
+    _entities(representations: $_representations) {
+        __typename
+        ... on Food {
+            name
+            rating
+            description
+        }
+    }
+}
+
+#Represesntations are passed via Query Variables

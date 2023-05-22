@@ -1,0 +1,12 @@
+schema {
+    query: Query
+}
+
+type Query {
+    product(upc: String!): Product
+}
+
+type Product @key(fields: "upc") {
+    upc: String!
+    name: String!
+}

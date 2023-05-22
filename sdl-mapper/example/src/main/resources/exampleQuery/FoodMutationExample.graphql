@@ -1,0 +1,6 @@
+mutation FoodExample($inputFood: FoodInput!) {
+    addFood(food: $inputFood) {
+        name
+        rating
+    }
+}

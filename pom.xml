@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>me.andrewberger.graphql</groupId>
+    <artifactId>graphql-jvm-components</artifactId>
+    <version>1.20-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+
+    <modules>
+        <module>printschema-nocode-maven-plugin</module>
+        <module>federation</module>
+        <module>graphql-java-auth-directive</module>
+        <module>caffeine-preparsed-document-provider</module>
+        <module>sdl-mapper</module>
+        <module>dataloader-util</module>
+        <module>datafetching-exception-handler</module>
+        <module>graphql-jvm-components-bom</module>
+        <module>automatic-persisted-queries-preparsed-document-provider</module>
+    </modules>
+
+
+    <properties>
+        <kotlin.version>1.8.10</kotlin.version>
+        <java.version>1.8</java.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.graphql-java</groupId>
+                <artifactId>graphql-java</artifactId>
+                <version>16.2</version>
+            </dependency>
+            <dependency>
+                <groupId>com.apollographql.federation</groupId>
+                <artifactId>federation-graphql-java-support</artifactId>
+                <version>0.6.1</version>
+            </dependency>
+            <dependency>
+                <groupId>org.jetbrains.kotlin</groupId>
+                <artifactId>kotlin-stdlib-jdk8</artifactId>
+                <version>${kotlin.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.jetbrains.kotlin</groupId>
+                <artifactId>kotlin-reflect</artifactId>
+                <version>${kotlin.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-api</artifactId>
+                <version>1.7.30</version>
+            </dependency>
+            <dependency>
+                <groupId>org.junit.jupiter</groupId>
+                <artifactId>junit-jupiter</artifactId>
+                <version>5.7.0</version>
+                <scope>test</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+</project>

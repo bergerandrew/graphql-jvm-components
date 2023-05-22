@@ -1,0 +1,7 @@
+query example {
+    food(name: "Pizza") {
+        name
+        rating
+        description
+    }
+}

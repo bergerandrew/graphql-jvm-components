@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:testdb
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: password
+    platform: org.hibernate.dialect.H2Dialect
+
+graphql.playground:
+  tabs:
+    - name: Food Query Example
+      query: classpath:exampleQuery/FoodQueryExample.graphql
+    - name: Food Mutation Example
+      query: classpath:exampleQuery/FoodMutationExample.graphql
+      headers:
+        auth: admin
+      variables: classpath:exampleQuery/FoodExampleMutationVariables.json
+    - name: Food Entity Query Example
+      query: classpath:exampleQuery/FoodEntityQueryExample.graphql
+      variables: classpath:exampleQuery/FoodEntityQueryExampleVariables.json
+

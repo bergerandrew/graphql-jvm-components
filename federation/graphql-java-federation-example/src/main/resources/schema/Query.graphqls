@@ -1,0 +1,18 @@
+schema {
+    query: QueryType
+}
+
+type QueryType {
+    food(name: String): Food!
+    ingredient(name: String): Ingredient!
+}
+
+type Food {
+    name: String!
+    ingredient: Ingredient!
+}
+
+type Ingredient @key(fields: "name"){
+    name: String!
+}
+
