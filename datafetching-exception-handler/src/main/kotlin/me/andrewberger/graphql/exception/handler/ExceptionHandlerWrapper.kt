@@ -7,7 +7,7 @@ import graphql.execution.DataFetcherExceptionHandler
 /**
  * Wraps a [DataFetcherExceptionHandler] to allow for calling a [ExceptionHandlerWrapperCallBack] first
  * @param dataFetcherExceptionHandler The handler to wrap
- * @param exceptionHandlerWrapperCallBack The the callback to invoke before executing the original handler
+ * @param exceptionHandlerWrapperCallBack The callback to invoke before executing the original handler
  * @return A [DataFetcherExceptionHandler] wrapping the original dataFetcherExceptionHandler
  */
 fun wrap(dataFetcherExceptionHandler: DataFetcherExceptionHandler, exceptionHandlerWrapperCallBack: ExceptionHandlerWrapperCallBack) =
