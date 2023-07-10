@@ -11,12 +11,12 @@
     <modules>
         <module>printschema-nocode-maven-plugin</module>
         <module>federation</module>
-        <module>graphql-java-auth-directive</module>
+        <module>graphql-jvm-auth-directive</module>
         <module>caffeine-preparsed-document-provider</module>
         <module>sdl-mapper</module>
         <module>dataloader-util</module>
         <module>datafetching-exception-handler</module>
-        <module>graphql-java-components-bom</module>
+        <module>graphql-jvm-components-bom</module>
         <module>automatic-persisted-queries-preparsed-document-provider</module>
     </modules>
 

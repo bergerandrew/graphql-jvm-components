@@ -11,8 +11,8 @@
     <artifactId>sdl-mapper</artifactId>
 
     <modules>
-        <module>graphql-java-sdl-mapper</module>
-        <module>graphql-java-sdl-mapper-starter</module>
+        <module>graphql-jvm-sdl-mapper</module>
+        <module>graphql-jvm-sdl-mapper-starter</module>
         <module>example</module>
     </modules>
 

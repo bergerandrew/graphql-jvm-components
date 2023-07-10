@@ -1,5 +1,5 @@
-# graphql-java-federation
-Provides standardized, programmatic support for resolving entities.
+# graphql-jvm-federation
+Provides programmatic support for resolving entities.
 Apollo's federation support provides a `SchemaTransformer` by calling `Federation.transform(...)`  but does not configure the transformer.  
 This project aims to make it easily configurable.  
 
@@ -20,11 +20,11 @@ type Ingredient @key(fields: "name"){
 ```
 Use the `FederationTransformerBuilder` to specify entities by providing `EntityWiring` instances.  
 `EntityWiring` takes several parameters.  
-* `typeName: String or typeDefinition: TypeDefinition` - The name of the type to configure a resolver for.  This type should already be 
+* `typeName: String` or `typeDefinition: TypeDefinition` - The name of the type to configure a resolver for.  This type should already be 
 marked as an entity via the schema transformer (for instance by having a `@key` directive in SDL).  
-* `resolver: EntityDataFetcher` - The dataFetcher/resolver to use to resolver instances of this entity.  
+* `resolver: EntityDataFetcher` - The dataFetcher/resolver to use to resolve instances of this entity.  
 * `resolvedType: Class`  - The object type that is returned by the resolver.  This is used internally for mapping the return type of the 
-entityDataFetcher to a `TypeResolver` which provides the concrete type which was resolved as an entity.  
+entityDataFetcher to a `TypeResolver` which provides the concrete type of the entity.  
 
 `FederationTransformerBuilder` can also take a map of classes to type names and a map of type names to `EntityDataFetcher` in its constructor.  
 ```kotlin
@@ -35,7 +35,7 @@ entityDataFetcher to a `TypeResolver` which provides the concrete type which was
                 )
                 .build()
 
-        //Apollo transformer to wire in entity support
+        //Apollo transformer to add in entity support
         val schemaTransformer = Federation.transform(typeRegistry, runtimeWiring)
 
         //NEW: improve federation support by allowing resolvers/datafetchers for each individual entity to be passed in at once
@@ -63,5 +63,5 @@ class IngredientEntityResolver: EntityDataFetcher<CompletableFuture<Ingredient>?
     }
 }
 ```
-See [full usage example](../graphql-java-federation-example)
+See [full usage example](../graphql-jvm-federation-example)
 

@@ -28,7 +28,9 @@ executionInputBuilder.dataLoaderRegistry(dataLoaderRegistry)
 ```
 
 A `DataLoaderDispatcherInstrumentationOptions` is responsible for dispatching "all the data loaders as each level of the graphql query is executed and hence make batched objects available to the query and the associated DataFetchers".  
-It accepts a DataLoaderDispatcherInstrumentationOptions object that can be set to track batching efficiency statistics.
+It accepts a DataLoaderDispatcherInstrumentationOptions object that can be set to track batching efficiency statistics.  
+See [GraphQL-Java Batching](https://www.graphql-java.com/documentation/batching/)
+
 ```kotlin
 fun dispatcherInstrumentation() : Instrumentation {
     val options: DataLoaderDispatcherInstrumentationOptions = DataLoaderDispatcherInstrumentationOptions

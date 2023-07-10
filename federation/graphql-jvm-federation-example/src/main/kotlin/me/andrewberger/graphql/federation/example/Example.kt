@@ -65,7 +65,7 @@ class Example {
         val typeRegistry: TypeDefinitionRegistry = TypeDefinitionRegistry()
                 .apply { fileTypeDefinitionRegistries.forEach { merge(it) } }
 
-        //Plain basic graphql-java tedious wiring
+        //Plain basic graphql-java wiring
         val runtimeWiring: RuntimeWiring = RuntimeWiring.newRuntimeWiring()
                 .type(TypeRuntimeWiring.newTypeWiring("QueryType")
                         .dataFetcher("food", FoodDataFetcher().getFood())

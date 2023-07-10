@@ -1,4 +1,4 @@
-# graphql-java-auth-directive
+# graphql-jvm-auth-directive
 Add capabilities to a service for including an `@auth` directive in SDL to protect resources.  
 
 Built following the suggestions of:  
@@ -32,7 +32,7 @@ An `AuthDirectiveWiringFactory` is already provided:
 ```kotlin
 val wiringFactory: WiringFactory = AuthDirectiveWiringFactory(MyAuthDirectiveConfig())
 ```
-**Note:** this process may be different depending on the (graphql-java based) framework used
+
 ```kotlin
     RuntimeWiring.newRuntimeWiring()
                  .wiringFactory(wiringFactory)

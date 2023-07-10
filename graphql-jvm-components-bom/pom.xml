@@ -20,7 +20,7 @@
             </dependency>
             <dependency>
                 <groupId>me.andrewberger.graphql</groupId>
-                <artifactId>graphql-java-auth-directive</artifactId>
+                <artifactId>graphql-jvm-auth-directive</artifactId>
                 <version>1.20-SNAPSHOT</version>
                 <optional>true</optional>
             </dependency>
@@ -50,19 +50,13 @@
             </dependency>
             <dependency>
                 <groupId>me.andrewberger.graphql</groupId>
-                <artifactId>graphql-java-sdl-mapper-parent</artifactId>
-                <version>1.13-SNAPSHOT</version>
-                <optional>true</optional>
-            </dependency>
-            <dependency>
-                <groupId>me.andrewberger.graphql</groupId>
-                <artifactId>graphql-java-sdl-mapper</artifactId>
+                <artifactId>graphql-jvm-sdl-mapper</artifactId>
                 <version>1.20-SNAPSHOT</version>
                 <optional>true</optional>
             </dependency>
             <dependency>
                 <groupId>me.andrewberger.graphql</groupId>
-                <artifactId>graphql-java-sdl-mapper-starter</artifactId>
+                <artifactId>graphql-jvm-sdl-mapper-starter</artifactId>
                 <version>1.20-SNAPSHOT</version>
                 <optional>true</optional>
             </dependency>
@@ -74,7 +68,7 @@
             </dependency>
             <dependency>
                 <groupId>me.andrewberger.graphql</groupId>
-                <artifactId>graphql-java-federation</artifactId>
+                <artifactId>graphql-jvm-federation</artifactId>
                 <version>1.20-SNAPSHOT</version>
                 <optional>true</optional>
             </dependency>

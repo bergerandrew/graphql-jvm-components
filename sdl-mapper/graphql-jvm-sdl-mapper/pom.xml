@@ -8,8 +8,7 @@
         <version>1.20-SNAPSHOT</version>
     </parent>
 
-    <artifactId>graphql-java-sdl-mapper</artifactId>
-    <name>graphql-java-sdl-mapper</name>
+    <artifactId>graphql-jvm-sdl-mapper</artifactId>
 
     <dependencies>
         <dependency>
@@ -19,7 +18,7 @@
         </dependency>
         <dependency>
             <groupId>me.andrewberger.graphql</groupId>
-            <artifactId>graphql-java-auth-directive</artifactId>
+            <artifactId>graphql-jvm-auth-directive</artifactId>
             <version>1.20-SNAPSHOT</version>
             <scope>compile</scope>
         </dependency>
@@ -35,7 +34,7 @@
         </dependency>
         <dependency>
             <groupId>me.andrewberger.graphql</groupId>
-            <artifactId>graphql-java-federation</artifactId>
+            <artifactId>graphql-jvm-federation</artifactId>
             <version>1.20-SNAPSHOT</version>
         </dependency>
         <dependency>

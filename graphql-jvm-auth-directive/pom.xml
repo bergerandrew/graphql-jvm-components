@@ -4,12 +4,12 @@
 
 
     <parent>
-        <artifactId>federation</artifactId>
+        <artifactId>graphql-jvm-components</artifactId>
         <groupId>me.andrewberger.graphql</groupId>
         <version>1.20-SNAPSHOT</version>
     </parent>
 
-    <artifactId>graphql-java-federation</artifactId>
+    <artifactId>graphql-jvm-auth-directive</artifactId>
     <version>1.20-SNAPSHOT</version>
 
     <dependencies>
@@ -18,16 +18,21 @@
             <artifactId>graphql-java</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.apollographql.federation</groupId>
-            <artifactId>federation-graphql-java-support</artifactId>
-        </dependency>
-        <dependency>
             <groupId>org.jetbrains.kotlin</groupId>
             <artifactId>kotlin-stdlib-jdk8</artifactId>
         </dependency>
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-core</artifactId>
             <scope>test</scope>
         </dependency>
     </dependencies>

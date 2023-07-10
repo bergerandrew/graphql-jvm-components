@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>graphql-jvm-components</artifactId>
+        <artifactId>sdl-mapper</artifactId>
         <groupId>me.andrewberger.graphql</groupId>
         <version>1.20-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>federation</artifactId>
-    <packaging>pom</packaging>
+    <artifactId>graphql-jvm-sdl-mapper-starter</artifactId>
 
-    <modules>
-        <module>graphql-jvm-federation</module>
-        <module>graphql-jvm-federation-example</module>
-    </modules>
-
-
+    <dependencies>
+        <dependency>
+            <groupId>me.andrewberger.graphql</groupId>
+            <artifactId>graphql-jvm-sdl-mapper</artifactId>
+            <version>1.20-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
 </project>
